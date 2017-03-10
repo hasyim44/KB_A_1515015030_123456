@@ -7,3 +7,4 @@ Kata Kunci
 6. Clause    = Memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk mencari solusi dari pertanyaan yang diberikan.
 7. Goal      = Menampilkan hasil eksekusi dari program yang telah dibuat.
 8. Domain    = Menyatakan jenis variabel atau argumen.
+9. Facts     = Memulai section facts
