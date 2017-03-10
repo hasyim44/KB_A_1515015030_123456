@@ -1,0 +1,9 @@
+Kata Kunci 
+1. Nondeterm = Menentukan bahwa kemungkinan ada sejumlah fakta dari suatu predikat sepanjanng program berjalan(default)
+2. Determ    = Menentukan bahwa hanya boleh ada satu fakta dari suatu predikat sepanjang program berjalan
+3. Single    = Menentukan hanya satu fakta dari predikat yang akan selalu ada.
+4. Global    = Menentukan bahwa setion fact adalah global dalam program.
+5. Predicates= Memberikan gambaran akan kata-kata yang ada di fungsi clause.
+6. Clause    = Memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk mencari solusi dari pertanyaan yang diberikan.
+7. Goal      = Menampilkan hasil eksekusi dari program yang telah dibuat.
+8. Domain    = Menyatakan jenis variabel atau argumen.

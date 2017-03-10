@@ -1,0 +1,23 @@
+Soal Postes2 
+1. a. orang(dian) = Dian merupakan orang
+   b. mobil(atoz) = Atoz adalah merk mobil
+   c. suka(dian,atoz) = Dian suka dengan atoz
+   d. dijual(atoz) = Atoz dijual
+   e. dapat_membeli(X,Y):- = X dapat dibeli Y,
+      orang(X),	 = jika X merupakan Orang,
+      mobil(Y),  = Y merupakan merk mobil,
+      suka(X,Y), = X suka mobil Y,
+      dijual(Y), = Y Telah dijual,
+   f. suka(_,Apa) = Setiap Orang suka Apa
+
+2. a. Rizky mempunyai hobi bermain catur = hobi(ricky,catur).
+   b. Emabang orang pemalas = pemalas(embang).
+   c. Yusida seorang vegetarian = vegetarian(yusida).
+   d. Kusida pandai bermain gitar = pandai(Kusdiar,gitar).
+   e. Mobil yang berwarna merah itu milik Sadek, bermerk BMW = milik(mobil,sadek), warna(mobil,merah), merk(mobil,BMW).
+   f. Awan seorang pamain piano, berasal dari pontianak bersuku Jawa = pemain(Awan,piano), berasal(Awan,pontianak), suku(Awan,jawa).
+   g. Seorang diaktakan baik jika mempunyai sifat penyayang dan dermawan = dikatakan(orang,baik):- sifat(orang,penyayang), sifat(orang,dermawan).
+   h. Seorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi = dikatakan(orang,pintar):-dapat(matematika,tinggi);dapat(ipa,tinggi);dapat(ips,tinggi).
+   i. Setiap orang pasti mati = setiap(orang,mati).
+
+
