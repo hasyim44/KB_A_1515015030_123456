@@ -1,0 +1,15 @@
+DOMAINS			/*Berisi jenis parameter yang akan digunakan*/
+kali,jumlah = integer	/*dalam parameter kali dan jumlah menggunakan domain integer*/
+
+PREDICATES		/*Berisi daftar deklarasi nama yg akan digunakan*/
+tambahkan(jumlah,jumlah,jumlah)	/*menggunakan predikat tambahkan dengan prosedur argummen (jumlah,jumlah,jumlah)*/
+kalikan(kali,kali,kali)		/*menggunakan predikat kalikan dengan prosedur argumen (kali,kali,kali)*/
+
+CLAUSES			/*Berisi fakta dan aturan yang akan dipakai*/
+tambahkan(X,Y,Jumlah):-Jumlah=X+Y.	/*X akan ditambahkan Y dengan Jumlah, Jika Jumlah berisi X ditambah Y*/
+kalikan(X,Y,Kali):-Kali=X*Y.		/*X akan dikalikan Y dengan Kali, Jika Kali berisi X dikali Y*/
+
+GOAL			/*Tujuan akhir yang akan dicapai*/
+tambahkan(32,54,Jumlah).	/*32 ditambahkan 54 berapa Jumlahnya*/
+				/*maka dengan nilai X = 32, nilai Y = 54, jumlahnya nanti akan 86 */
+				
