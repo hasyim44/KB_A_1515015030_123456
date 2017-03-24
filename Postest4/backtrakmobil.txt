@@ -1,0 +1,42 @@
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,mean),!,
+	Price > 25000.
+ 
+					Model		Warna		Harga
+  car(maserati,green,25000).         maserati(X)	green(X)	25000
+  car(corvette,black,24000).	     corvette(V)	black(X)	24000
+  car(corvette,red,26000).	     corvette(V)	red(V)		26000
+  car(porsche,red,24000).	     porsche(X)		red(X)		24000
+ 
+ 				    Warna	Kategory
+  colors(red,sexy).		     red(V)	sexy(V)
+  colors(black,mean).		     black(X)	mean(X)
+  colors(green,preppy).		     green(X)	preppy(x)
+
+goal
+  buy_car(corvette,Y).
+
+
+Penjelasan breaking Mobil
+
+# Program mencari mobil dengan model dan warna
+# Mobil harus memiliki model, warna dan harga. 
+  Warna mobil dalam kategori sexy, dimana kategori sexy adalah warna red,sedangkan
+  aturan harga > 25000 tidak terbaca karena ada not. 
+# Program  
+    car(maserati,green,25000).
+	  Model ini memenuhi karena memiliki model, warna dan harga tetapi warna green bukan termaksud warna kategori sexy. (lacak balik)						
+    car(corvette,black,24000).
+	  Model ini memenuhi karena memiliki model, warna dan harga tetapi warna black bukan termaksud warna kategori sexy. (lacak balik)
+    car(corvette,red,26000).
+	  Model ini memenuhi karena memiliki model, warna dan harga yaitu model corvette, red dan 26000 red memenuhi kategori sexy yang dicari.
+         
+    rules ketiga tidak dijalankan karena ada fungsi not yang berarti berhenti sampai pada rules kedua saja (berhenti)
+							
+# Semua rules terpenuhi maka program akan berhenti lalu goal dari programnya = buy_car(corvette,Y)=red.
+							
+
+
+
